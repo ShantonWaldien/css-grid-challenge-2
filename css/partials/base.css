@@ -4,21 +4,30 @@
 html {
   scroll-behavior: smooth; }
 
+.main-container {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  grid-gap: 25px; }
+
 body {
   margin: 0;
   padding: 0;
   font-family: "Fira Sans Condensed", sans-serif; }
 
 .left {
-  width: 20vw;
   background-color: #232526;
-  height: 100vh; }
+  height: 100vh;
+  position: fixed;
+  margin: 0;
+  top: 0;
+  width: 20%; }
 
 .grid-container1 {
   display: grid;
-  grid-template-rows: auto 30vh 35vh;
+  grid-template-rows: auto 30vh;
   grid-gap: 10px;
-  padding: 10px; }
+  padding: 10px;
+  margin: 0; }
   .grid-container1 .item1 {
     padding-top: 30px;
     font-size: 2rem;
@@ -40,5 +49,15 @@ body {
     .grid-container1 .item1 .location {
       font-size: 20px;
       line-height: 20px; }
+
+.masonry {
+  margin-top: 25px;
+  margin-left: 330px;
+  column-count: 2;
+  width: 76vw;
+  height: auto; }
+  .masonry img {
+    width: 100%;
+    vertical-align: center; }
 
 /*# sourceMappingURL=base.css.map */

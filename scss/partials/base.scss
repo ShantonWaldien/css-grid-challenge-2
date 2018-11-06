@@ -12,30 +12,43 @@ html {
 
 // Body Styling starts Here
 
+.main-container {
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    grid-gap: 25px;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: $font1;
 }
 
+// left section styling
+
 .left {
-    width: 20vw;
     background-color: $background-color1;
     height: 100vh;
+    position: fixed;
+    margin: 0;
+    top: 0;
+    width: 20%;
 }
 
 .grid-container1 {
     display: grid;
-    grid-template-rows: auto 30vh 35vh;
+    grid-template-rows: auto 30vh;
     grid-gap: 10px;
     padding: 10px;
-
+    margin: 0;
     
+
     .item1 {
         padding-top: 30px;
         font-size: 2rem;
         color: $f-color2;
         text-align: center;
+        
 
         .profile > img {
             display: block;
@@ -64,9 +77,20 @@ body {
     }
 }
 
-// Masonry Layout begins here
+// Masonry Gallery Content Styling begins here
 
-
-
-
-
+.masonry { 
+    // display: grid;
+    // grid-template-columns: auto auto;
+    // column-gap: 25px;
+    margin-top: 25px;   
+    margin-left: 330px;
+    column-count: 2;
+    width: 76vw;
+    height: auto;
+    
+    img {
+        width: 100%;
+        vertical-align: center;
+    }
+}
