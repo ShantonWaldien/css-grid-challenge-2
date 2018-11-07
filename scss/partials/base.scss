@@ -41,6 +41,7 @@ body {
     grid-gap: 10px;
     padding: 10px;
     margin: 0;
+    width: 100%;
     
 
     .item1 {
@@ -48,6 +49,7 @@ body {
         font-size: 2rem;
         color: $f-color2;
         text-align: center;
+        width: 100%;
         
 
         .profile > img {
@@ -77,12 +79,41 @@ body {
     }
 }
 
+.teams {
+    border-top: 1px solid grey;
+
+    p {
+        font-size: 20px;
+        color: yellow;
+    }
+
+    .zero {
+        padding: 0;
+    }
+
+    ul {
+        list-style-type: circle;
+    }
+
+    li {
+        padding-top: 40px; 
+    }
+
+    a {
+        text-decoration: none;
+        color: red;
+
+        &:hover {
+            color: grey;
+        }
+    }
+
+    
+}
+
 // Masonry Gallery Content Styling begins here
 
-.masonry { 
-    // display: grid;
-    // grid-template-columns: auto auto;
-    // column-gap: 25px;
+.masonry {
     margin-top: 25px;   
     margin-left: 330px;
     column-count: 2;
